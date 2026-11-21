@@ -15,5 +15,5 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true
   },
-  "include": ["src/**/*.ts", "placeholder-sut/**/*.ts", "test/**/*.ts"]
+  "include": ["src/**/*.ts", "placeholder-sut/**/*.ts", "reference-impl/**/*.ts", "test/**/*.ts"]
 }

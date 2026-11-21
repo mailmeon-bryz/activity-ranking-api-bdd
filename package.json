@@ -16,7 +16,8 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "test:reference": "tsx reference-impl/run-suite.ts"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^13.3.0",
