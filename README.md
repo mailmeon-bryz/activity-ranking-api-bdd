@@ -1,5 +1,11 @@
 # Activity Ranking API: specification-first BDD suite
 
+> **You are on the `reference-impl` branch.** It adds a throwaway implementation in
+> [`reference-impl/`](reference-impl) so that the **unchanged** suite can be shown green:
+> `npm run test:reference` → `78 scenarios (78 passed)`. The service and its scoring formula
+> are deliberately simple and are **not** a proposal for the real API. This branch is never
+> merged; `main` holds the spec-first suite, which is red by design.
+
 Acceptance tests, written **before the code exists**, for an API that takes a city or town and
 returns a 7-day ranked list of activities (Skiing, Surfing, Outdoor Sightseeing, Indoor
 Sightseeing) based on the Open-Meteo forecast.

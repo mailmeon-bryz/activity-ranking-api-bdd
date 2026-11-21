@@ -31,6 +31,11 @@ jobs:
         run: npm test
         continue-on-error: true
 
+      # reference-impl branch only: the unchanged suite against a throwaway implementation.
+      # This one MUST pass. It proves the suite can go green and has no bugs of its own.
+      - name: Acceptance suite against the reference implementation (must pass)
+        run: npm run test:reference
+
       - name: Upload Cucumber report
         if: always()
         uses: actions/upload-artifact@v4
